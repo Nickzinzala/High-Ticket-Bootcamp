@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.btn {
+    background-image: linear-gradient(90deg, #005279, #3dda5b);
+    -webkit-animation: btn 3s ease infinite alternate;
+    animation: btn 3s ease infinite alternate;
+    animation-name: btn;
+    background-size: 300% 300%;
+    border-radius: 15px;
+    box-shadow: #181821 0px 15px 10px -10px;
+}
+@keyframes btn {
+  0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+}
+20%, 80% {
+    transform: translate3d(2px, 0, 0);
+}
+30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+}
+40%, 60% {
+    transform: translate3d(4px, 0, 0);
+}
+}
+.heding {
+    line-height: 55px;
+}
+@media (max-width:767px) {
+  .heding {
+    line-height: 40px;
+}  
+    
+}
+@media (max-width:480px) {
+  .heding {
+    line-height: 31px;
+}    
+}
